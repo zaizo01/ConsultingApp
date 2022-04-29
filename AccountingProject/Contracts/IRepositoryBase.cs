@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AccountingProject.Repositories
+namespace AccountingProject.Contracts
 {
-    public interface IGenericRepository<TEntity> where TEntity : class
+    public interface IRepositoryBase<TEntity>
     {
         Task<IEnumerable<TEntity>> GetAll();
         Task<TEntity> GetById(Guid id);
-        Task<TEntity> Insert(TEntity entity);
+        Task<TEntity> Create(TEntity entity);
         Task<TEntity> Update(TEntity entity);
         Task Delete(Guid id);
     }

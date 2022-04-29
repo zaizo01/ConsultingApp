@@ -1,8 +1,8 @@
 
+using AccountingProject.Contracts;
 using AccountingProject.Entities;
 using AccountingProject.Helpers;
 using AccountingProject.Repositories;
-using AccountingProject.Repositories.Implements;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -39,7 +39,8 @@ namespace AccountingProject
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AccountingProject", Version = "v1" });
             });
-            services.AddScoped<IGenericRepository<Doctor>, GenericRepository<Doctor>>();
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,19 +1,27 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AccountingProject.Contracts;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AccountingProject.Repositories.Implements
+namespace AccountingProject.Repositories
 {
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
+    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {
         private readonly ApplicationDbContext context;
 
-        public GenericRepository(ApplicationDbContext context)
+        public RepositoryBase(ApplicationDbContext context)
         {
             this.context = context;
         }
+        public async Task<TEntity> Create(TEntity entity)
+        {
+            context.Set<TEntity>().Add(entity);
+            await context.SaveChangesAsync();
+            return entity;
+        }
+
         public async Task Delete(Guid id)
         {
             var entity = await GetById(id);
@@ -30,14 +38,6 @@ namespace AccountingProject.Repositories.Implements
         public async Task<TEntity> GetById(Guid id)
         {
             return await context.Set<TEntity>().FindAsync(id);
-        }
-
-        public async Task<TEntity> Insert(TEntity entity)
-        {
-            context.Set<TEntity>().Add(entity);
-            await context.SaveChangesAsync();
-            return entity;
-
         }
 
         public async Task<TEntity> Update(TEntity entity)

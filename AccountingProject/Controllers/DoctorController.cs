@@ -1,4 +1,5 @@
 ﻿
+using AccountingProject.Contracts;
 using AccountingProject.Entities;
 using AccountingProject.Services;
 using AccountingProject.Services.Implements;
@@ -15,10 +16,9 @@ namespace AccountingProject.Controllers
     [ApiController]
     public class DoctorController : ControllerBase
     {
+        private readonly IRepositoryManager repository;
 
-        private GenericRepository<Doctor> repository;
-
-        public DoctorController(GenericRepository<Doctor> repository)
+        public DoctorController(IRepositoryManager repository)
         {
             this.repository = repository;
         }
@@ -26,7 +26,15 @@ namespace AccountingProject.Controllers
         [HttpGet]
         public async Task<IActionResult> GetDoctorById(Guid id)
         {
-            var doctor = await repository.GetById(id);
+            var doctor = await repository.Doctor.GetById(id);
+            if (doctor == null) return NotFound();
+            return Ok(doctor);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetDoctorByName(string name)
+        {
+            var doctor = await repository.Doctor.GetByName(name);
             if (doctor == null) return NotFound();
             return Ok(doctor);
         }
@@ -34,7 +42,7 @@ namespace AccountingProject.Controllers
         [HttpGet]
         public async Task<IActionResult> GetDoctors()
         {
-            var doctors = await repository.GetAll();
+            var doctors = await repository.Doctor.GetAll();
             return Ok(doctors);
         }
 
@@ -43,7 +51,7 @@ namespace AccountingProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                await repository.Insert(doctor);
+                await repository.Doctor.Create(doctor);
                 return Ok(doctor);
             }
 
@@ -53,7 +61,7 @@ namespace AccountingProject.Controllers
         [HttpPut]
         public async Task<IActionResult> PutDoctor(Doctor doctor)
         {
-            var item = await repository.Update(doctor);
+            var item = await repository.Doctor.Update(doctor);
             return Ok(item);
         }
 
@@ -61,7 +69,7 @@ namespace AccountingProject.Controllers
         public async Task<IActionResult> DeleteDoctor(Guid id)
         {
 
-           await repository.Delete(id);
+            await repository.Doctor.Delete(id);
             return Ok("Record deleted");
         }
     }
