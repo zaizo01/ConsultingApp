@@ -1,4 +1,8 @@
+
+using AccountingProject.Entities;
 using AccountingProject.Helpers;
+using AccountingProject.Repositories;
+using AccountingProject.Repositories.Implements;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,12 +32,14 @@ namespace AccountingProject
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.ConfigureSqlContext(Configuration);
+            services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AccountingProject", Version = "v1" });
             });
+            services.AddScoped<IGenericRepository<Doctor>, GenericRepository<Doctor>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
