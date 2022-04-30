@@ -8,7 +8,9 @@ namespace AccountingProject.Contracts
 {
     public interface IRepositoryManager
     {
-        IDoctorRepository<Doctor> Doctor{ get; }
+        IDoctorRepository<Doctor> Doctor { get; }
+        IPatientRepository<Patient> Patient { get; }
+        IAppointmentDateRepository<AppointmentDate> AppointmentDate { get;  }
         void Save();
     }
 }

@@ -1,8 +1,8 @@
 ﻿
 using AccountingProject.Contracts;
+using AccountingProject.DTOs;
 using AccountingProject.Entities;
-using AccountingProject.Services;
-using AccountingProject.Services.Implements;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -17,10 +17,12 @@ namespace AccountingProject.Controllers
     public class DoctorController : ControllerBase
     {
         private readonly IRepositoryManager repository;
+        private readonly IMapper mapper;
 
-        public DoctorController(IRepositoryManager repository)
+        public DoctorController(IRepositoryManager repository, IMapper mapper)
         {
             this.repository = repository;
+            this.mapper = mapper;
         }
 
         [HttpGet]
@@ -43,16 +45,17 @@ namespace AccountingProject.Controllers
         public async Task<IActionResult> GetDoctors()
         {
             var doctors = await repository.Doctor.GetAll();
-            return Ok(doctors);
+            return Ok(mapper.Map<List<DoctorGetDTO>>(doctors));
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostDoctor(Doctor doctor)
+        public async Task<IActionResult> PostDoctor(DoctorPostDTO doctorDto)
         {
             if (ModelState.IsValid)
             {
+                var doctor = mapper.Map<Doctor>(doctorDto);
                 await repository.Doctor.Create(doctor);
-                return Ok(doctor);
+                return Ok(mapper.Map<DoctorPostDTO>(doctor));
             }
 
             return new JsonResult("Somethign Went wrong") { StatusCode = 500 };
@@ -61,8 +64,8 @@ namespace AccountingProject.Controllers
         [HttpPut]
         public async Task<IActionResult> PutDoctor(Doctor doctor)
         {
-            var item = await repository.Doctor.Update(doctor);
-            return Ok(item);
+            var doctorDB = await repository.Doctor.Update(doctor);
+            return Ok(doctorDB);
         }
 
         [HttpDelete("{id}")]
