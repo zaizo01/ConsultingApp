@@ -30,7 +30,7 @@ namespace AccountingProject.Controllers
         {
             var doctor = await repository.Doctor.GetById(id);
             if (doctor == null) return NotFound();
-            return Ok(doctor);
+            return Ok(mapper.Map<DoctorGetDTO>(doctor));
         }
 
         [HttpGet]

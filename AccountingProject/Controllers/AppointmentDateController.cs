@@ -1,5 +1,7 @@
 ﻿using AccountingProject.Contracts;
+using AccountingProject.DTOs;
 using AccountingProject.Entities;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -14,10 +16,12 @@ namespace AccountingProject.Controllers
     public class AppointmentDateController : ControllerBase
     {
         private readonly IRepositoryManager repository;
+        private readonly IMapper mapper;
 
-        public AppointmentDateController(IRepositoryManager repository)
+        public AppointmentDateController(IRepositoryManager repository, IMapper mapper)
         {
             this.repository = repository;
+            this.mapper = mapper;
         }
 
         [HttpGet]
@@ -36,10 +40,11 @@ namespace AccountingProject.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostAppointmentDate(AppointmentDate appointmentDate)
+        public async Task<IActionResult> PostAppointmentDate(AppointmentDatePostDTO appointmentDateDto)
         {
             if (ModelState.IsValid)
             {
+                var appointmentDate = mapper.Map<AppointmentDate>(appointmentDateDto);
                 await repository.AppointmentDate.Create(appointmentDate);
                 return Ok(appointmentDate);
             }

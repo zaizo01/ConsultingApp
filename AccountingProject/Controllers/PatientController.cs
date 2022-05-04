@@ -1,5 +1,7 @@
 ﻿using AccountingProject.Contracts;
+using AccountingProject.DTOs;
 using AccountingProject.Entities;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -14,18 +16,20 @@ namespace AccountingProject.Controllers
     public class PatientController : ControllerBase
     {
         private readonly IRepositoryManager repository;
+        private readonly IMapper mapper;
 
-        public PatientController(IRepositoryManager repository)
+        public PatientController(IRepositoryManager repository, IMapper mapper)
         {
             this.repository = repository;
+            this.mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetPatientById(Guid id)
         {
-            var doctor = await repository.Doctor.GetById(id);
-            if (doctor == null) return NotFound();
-            return Ok(doctor);
+            var patient = await repository.Patient.GetById(id);
+            if (patient == null) return NotFound();
+            return Ok(mapper.Map<PatientGetDTO>(patient));
         }
 
 
@@ -33,14 +37,15 @@ namespace AccountingProject.Controllers
         public async Task<IActionResult> GetPatiens()
         {
             var patiens = await repository.Patient.GetAll();
-            return Ok(patiens);
+            return Ok(mapper.Map<List<PatientGetDTO>>(patiens));
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostPatient(Patient patient)
+        public async Task<IActionResult> PostPatient(PatientPostDTO patientDto)
         {
             if (ModelState.IsValid)
             {
+                var patient = mapper.Map<Patient>(patientDto);
                 await repository.Patient.Create(patient);
                 return Ok(patient);
             }
