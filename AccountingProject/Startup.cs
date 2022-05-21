@@ -3,6 +3,7 @@ using AccountingProject.Contracts;
 using AccountingProject.Entities;
 using AccountingProject.Helpers;
 using AccountingProject.Repositories;
+using LoggerService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,6 +35,7 @@ namespace AccountingProject
         {
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+            services.AddSingleton<ILoggerManager, LoggerManager>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

@@ -63,3 +63,15 @@ C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\ref\AccountingProject.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.pdb
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.genruntimeconfig.cache
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\nlog.config
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\NLog.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\LoggerService.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\LoggerService.pdb
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

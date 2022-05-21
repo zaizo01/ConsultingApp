@@ -1,0 +1,95 @@
+2022-05-21 11:31:51.1855 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 11:34:48.7202 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 11:40:20.0393 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 11:50:12.0904 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 11:56:12.8590 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 11:58:30.7179 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 12:02:28.5756 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 12:11:11.0597 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 12:27:14.4382 DEBUG Init-Start
+2022-05-21 12:27:44.9229 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 12:36:21.4180 DEBUG Init-Start
+2022-05-21 12:36:24.7680 INFO Application started. Press Ctrl+C to shut down.
+2022-05-21 12:36:24.7680 INFO Hosting environment: Development
+2022-05-21 12:36:24.8018 INFO Content root path: C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject
+2022-05-21 12:36:51.9674 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 12:40:15.6285 DEBUG Init-Start
+2022-05-21 12:40:21.5733 INFO Application started. Press Ctrl+C to shut down.
+2022-05-21 12:40:21.6148 INFO Hosting environment: Development
+2022-05-21 12:40:21.6194 INFO Content root path: C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject
+2022-05-21 12:41:15.1069 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 12:41:51.3363 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 12:49:35.2588 DEBUG Init-Start
+2022-05-21 12:49:40.5333 INFO Application started. Press Ctrl+C to shut down.
+2022-05-21 12:49:40.9130 INFO Hosting environment: Development
+2022-05-21 12:49:41.6480 INFO Content root path: C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject
+2022-05-21 12:50:06.7481 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 12:52:10.5067 DEBUG Init-Start
+2022-05-21 12:52:14.7636 INFO Application started. Press Ctrl+C to shut down.
+2022-05-21 12:52:14.9968 INFO Hosting environment: Development
+2022-05-21 12:52:15.1031 INFO Content root path: C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject
+2022-05-21 12:52:37.2136 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-21 12:54:12.1514 INFO Application started. Press Ctrl+C to shut down.
+2022-05-21 12:54:14.4639 INFO Hosting environment: Development
+2022-05-21 12:54:14.8401 INFO Content root path: C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject
+2022-05-21 12:54:37.3346 ERROR Something went wrong inside the GetPatiens action: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[AccountingProject.Entities.Patient, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[AccountingProject.DTOs.PatientGetDTO, AccountingProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
