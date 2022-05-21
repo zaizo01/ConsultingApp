@@ -38,12 +38,6 @@ namespace AccountingProject.Controllers
             var appointmentDate = await repository.AppointmentDate.GetAll();
             return Ok(appointmentDate);
         }
-        [HttpGet]
-        public async Task<IActionResult> GetListOfDates(Guid doctorId)
-        {
-            var dates = await repository.AppointmentDate.GetListOfDates(doctorId);
-            return Ok(dates);
-        }
 
         [HttpPost]
         public async Task<IActionResult> PostAppointmentDate(AppointmentDatePostDTO appointmentDateDto)

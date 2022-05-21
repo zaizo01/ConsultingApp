@@ -48,6 +48,13 @@ namespace AccountingProject.Controllers
             return Ok(mapper.Map<List<DoctorGetDTO>>(doctors));
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetListOfDates(Guid doctorId)
+        {
+            var dates = await repository.AppointmentDate.GetListOfDates(doctorId);
+            return Ok(mapper.Map<List<ListOfDateByDoctors>>(dates));
+        }
+
         [HttpPost]
         public async Task<IActionResult> PostDoctor(DoctorPostDTO doctorDto)
         {

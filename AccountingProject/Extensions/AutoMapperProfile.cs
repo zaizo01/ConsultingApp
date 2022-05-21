@@ -16,7 +16,9 @@ namespace AccountingProject.Extensions
             CreateMap<Doctor, DoctorPostDTO>().ReverseMap();
             CreateMap<Patient, PatientGetDTO>().ReverseMap();
             CreateMap<Patient, PatientPostDTO>().ReverseMap();
-            CreateMap<AppointmentDate, AppointmentDatePostDTO > ().ReverseMap();
+            CreateMap<AppointmentDate, AppointmentDatePostDTO> ().ReverseMap();
+            CreateMap<AppointmentDate, AppointmentDateGetDTO> ().ReverseMap();
+            CreateMap<AppointmentDate, ListOfDateByDoctors>().ReverseMap();
         }
     }
 }

@@ -18,7 +18,10 @@ namespace AccountingProject.Repositories
         }
         public async Task<List<AppointmentDate>> GetListOfDates(Guid doctorId)
         {
-            var dates = await context.AppointmentDates.Where(x => x.DoctorId == doctorId).ToListAsync();
+            var dates = await context.AppointmentDates
+                .Include(d => d.Doctor)
+                .Include(p => p.Patient)
+                .Where(x => x.DoctorId == doctorId).ToListAsync();
             return dates;
         }
         public async Task<int> ValidateEntities(AppointmentDatePostDTO appointmentDatePostDTO)
