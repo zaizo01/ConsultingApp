@@ -16,12 +16,20 @@ namespace AccountingProject.Repositories
         {
             this.context = context;
         }
-        public async Task<List<AppointmentDate>> GetListOfDates(Guid doctorId)
+        public async Task<List<AppointmentDate>> GetDoctorListOfDates(Guid doctorId)
         {
             var dates = await context.AppointmentDates
                 .Include(d => d.Doctor)
                 .Include(p => p.Patient)
                 .Where(x => x.DoctorId == doctorId).ToListAsync();
+            return dates;
+        }
+
+        public async Task<List<AppointmentDate>> GetPatientListOfDates(Guid patientId)
+        {
+            var dates = await context.AppointmentDates
+                .Include(d => d.Doctor)
+                .Where(x => x.PatientId == patientId).ToListAsync();
             return dates;
         }
         public async Task<int> ValidateEntities(AppointmentDatePostDTO appointmentDatePostDTO)

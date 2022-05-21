@@ -10,6 +10,7 @@ namespace AccountingProject.Contracts
     public interface IAppointmentDateRepository<TEntity> : IRepositoryBase<AppointmentDate>
     {
         Task<int> ValidateEntities(AppointmentDatePostDTO appointmentDatePostDTO);
-        Task<List<TEntity>> GetListOfDates(Guid doctorId);
+        Task<List<TEntity>> GetDoctorListOfDates(Guid doctorId);
+        Task<List<TEntity>> GetPatientListOfDates(Guid patientId);
     }
 }

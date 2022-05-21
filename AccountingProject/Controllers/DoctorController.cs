@@ -51,7 +51,7 @@ namespace AccountingProject.Controllers
         [HttpGet]
         public async Task<IActionResult> GetListOfDates(Guid doctorId)
         {
-            var dates = await repository.AppointmentDate.GetListOfDates(doctorId);
+            var dates = await repository.AppointmentDate.GetDoctorListOfDates(doctorId);
             return Ok(mapper.Map<List<ListOfDateByDoctors>>(dates));
         }
 
