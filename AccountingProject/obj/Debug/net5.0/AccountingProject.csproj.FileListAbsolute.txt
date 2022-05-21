@@ -1,3 +1,10 @@
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.csproj.AssemblyReference.cache
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.AssemblyInfoInputs.cache
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.AssemblyInfo.cs
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.csproj.CoreCompileInputs.cache
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\appsettings.json
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\appsettings.Production.json
@@ -8,6 +15,8 @@ C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\AccountingProject.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\ref\AccountingProject.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\AccountingProject.pdb
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Humanizer.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
@@ -15,6 +24,9 @@ C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.Identity.Client.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
@@ -29,6 +41,7 @@ C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -42,13 +55,6 @@ C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.csproj.AssemblyReference.cache
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.AssemblyInfoInputs.cache
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.AssemblyInfo.cs
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.csproj.CoreCompileInputs.cache
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\scopedcss\bundle\AccountingProject.styles.css
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\staticwebassets\AccountingProject.StaticWebAssets.Manifest.cache
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.RazorTargetAssemblyInfo.cache
@@ -57,9 +63,3 @@ C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\ref\AccountingProject.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.pdb
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\obj\Debug\net5.0\AccountingProject.genruntimeconfig.cache
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\AutoMapper.dll
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
-C:\Users\zaiz\Desktop\accounting project\AccountingProject\AccountingProject\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

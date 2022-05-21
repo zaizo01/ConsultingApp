@@ -38,15 +38,31 @@ namespace AccountingProject.Controllers
             var appointmentDate = await repository.AppointmentDate.GetAll();
             return Ok(appointmentDate);
         }
+        [HttpGet]
+        public async Task<IActionResult> GetListOfDates(Guid doctorId)
+        {
+            var dates = await repository.AppointmentDate.GetListOfDates(doctorId);
+            return Ok(dates);
+        }
 
         [HttpPost]
         public async Task<IActionResult> PostAppointmentDate(AppointmentDatePostDTO appointmentDateDto)
         {
             if (ModelState.IsValid)
             {
-                var appointmentDate = mapper.Map<AppointmentDate>(appointmentDateDto);
-                await repository.AppointmentDate.Create(appointmentDate);
-                return Ok(appointmentDate);
+                var validationEntitiesExist = await repository.AppointmentDate.ValidateEntities(appointmentDateDto);
+                if (validationEntitiesExist == 1) return new JsonResult("El Doctor no existe");
+                if (validationEntitiesExist == 5) return new JsonResult("La fecha de inicio no puede ser igual a la fecha fin");
+                if (validationEntitiesExist == 2) return new JsonResult("El Paciente no existe");
+                if (validationEntitiesExist == 3) return new JsonResult("El Doctor tiene una cita agendada en esa fecha");
+                if (validationEntitiesExist == 5) return new JsonResult("La fecha de inicio no puede ser igual a la fecha fin");
+                if (validationEntitiesExist == 6) return new JsonResult("La fecha fin es menor que la fecha de inicio");
+                if (validationEntitiesExist == 4)
+                {
+                    var appointmentDate = mapper.Map<AppointmentDate>(appointmentDateDto);
+                    await repository.AppointmentDate.Create(appointmentDate);
+                    return Ok(mapper.Map<AppointmentDatePostDTO>(appointmentDate));
+                }
             }
 
             return new JsonResult("Somethign Went wrong") { StatusCode = 500 };

@@ -1,4 +1,5 @@
-﻿using AccountingProject.Entities;
+﻿using AccountingProject.DTOs;
+using AccountingProject.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,5 +9,7 @@ namespace AccountingProject.Contracts
 {
     public interface IAppointmentDateRepository<TEntity> : IRepositoryBase<AppointmentDate>
     {
+        Task<int> ValidateEntities(AppointmentDatePostDTO appointmentDatePostDTO);
+        Task<List<TEntity>> GetListOfDates(Guid doctorId);
     }
 }

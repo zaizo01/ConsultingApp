@@ -9,5 +9,6 @@ namespace AccountingProject.Contracts
     public interface IDoctorRepository<TEntity>: IRepositoryBase<Doctor>
     {
         Task<TEntity> GetByName(string name);
+        
     }
 }
