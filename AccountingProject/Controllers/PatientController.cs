@@ -51,7 +51,6 @@ namespace AccountingProject.Controllers
             {
                 var patiens = await repository.Patient.GetAll();
                 return Ok(mapper.Map<List<PatientGetDTO>>(patiens));
-
             }
             catch (Exception ex)
             {
@@ -65,7 +64,6 @@ namespace AccountingProject.Controllers
         {
             try
             {
-
                 var patientDates = await repository.AppointmentDate.GetPatientListOfDates(patientId);
                 return Ok(mapper.Map<List<ListOfDatesByPatient>>(patientDates));
             }

@@ -27,8 +27,6 @@ namespace AccountingProject.Repositories
 
         public async Task<List<AppointmentDate>> GetPatientListOfDates(Guid patientId)
         {
-            //var patientExist = await context.Patients.FirstOrDefaultAsync(x => x.Id == patientId);
-            //if(patientExist == null) retu 
             var dates = await context.AppointmentDates
                 .Include(d => d.Doctor)
                 .Where(x => x.PatientId == patientId).ToListAsync();

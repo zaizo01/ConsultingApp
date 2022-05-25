@@ -21,7 +21,6 @@ namespace AccountingProject.Repositories
         {
             var doctor = await context.Doctors.FirstOrDefaultAsync(x => x.FistName == name);
             return doctor;
-
         }
 
     }
