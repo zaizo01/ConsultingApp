@@ -10,3 +10,15 @@ C:\Users\zaiz\Desktop\accounting project\AccountingProject\LoggerService\obj\Deb
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\LoggerService\obj\Debug\net5.0\LoggerService.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\LoggerService\obj\Debug\net5.0\ref\LoggerService.dll
 C:\Users\zaiz\Desktop\accounting project\AccountingProject\LoggerService\obj\Debug\net5.0\LoggerService.pdb
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\bin\Debug\net5.0\LoggerService.deps.json
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\bin\Debug\net5.0\LoggerService.dll
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\bin\Debug\net5.0\ref\LoggerService.dll
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\bin\Debug\net5.0\LoggerService.pdb
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\obj\Debug\net5.0\LoggerService.csproj.AssemblyReference.cache
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\obj\Debug\net5.0\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\obj\Debug\net5.0\LoggerService.AssemblyInfoInputs.cache
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\obj\Debug\net5.0\LoggerService.AssemblyInfo.cs
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\obj\Debug\net5.0\LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\obj\Debug\net5.0\LoggerService.dll
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\obj\Debug\net5.0\ref\LoggerService.dll
+C:\Users\CZaiz\Desktop\Projects\ConsultingApp\ConsultingApp\LoggerService\obj\Debug\net5.0\LoggerService.pdb

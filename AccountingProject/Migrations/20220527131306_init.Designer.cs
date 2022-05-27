@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AccountingProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220508235030_init")]
+    [Migration("20220527131306_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -108,6 +108,9 @@ namespace AccountingProject.Migrations
 
                     b.Property<string>("Age")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("FistName")
                         .HasColumnType("nvarchar(max)");

@@ -107,6 +107,9 @@ namespace AccountingProject.Migrations
                     b.Property<string>("Age")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("FistName")
                         .HasColumnType("nvarchar(max)");
 
